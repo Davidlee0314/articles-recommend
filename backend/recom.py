@@ -14,8 +14,6 @@ class Recom():
             self.model = pickle.load(f)
         with open('./backend/static/result.pkl', 'rb') as f:
             self.res = pickle.load(f)
-        # with open('./backend/static/result.pkl', 'rb') as f:
-        #     self.res = pickle.load(f)
 
         # cut list
         self.input_cut = self.input_processing(txt)
