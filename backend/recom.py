@@ -5,7 +5,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import requests
 import json
 import re
-import bz2
 
 class Recom():
     def __init__(self, txt):
@@ -13,7 +12,7 @@ class Recom():
             self.data = pickle.load(f)
         with open('./backend/static/tfidf_model.pkl','rb') as f:
             self.model = pickle.load(f)
-        with bz2.BZ2File('./backend/static/result.pbz2', 'r') as f:
+        with open('./backend/static/result.pkl', 'rb') as f:
             self.res = pickle.load(f)
         # with open('./backend/static/result.pkl', 'rb') as f:
         #     self.res = pickle.load(f)
