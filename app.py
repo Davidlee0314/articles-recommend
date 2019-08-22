@@ -9,5 +9,5 @@ def index():
     return render_template("index.html")
 api = Api(app)
 api.add_resource(Article, '/api/articles')
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
