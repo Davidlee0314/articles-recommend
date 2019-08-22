@@ -8,12 +8,15 @@
 import Background from './components/Background.vue'
 export default {
     name: 'app',
+    metaInfo: {
+        title: 'Articles Recommendation'
+    },
     components: {
         Background
     },
-    created: function() {  
-        document.title = 'Articles Recommendation'
-    }
+    // created: function() {  
+    //     document.title = 'Articles Recommendation'
+    // }
   
 }
 </script>
